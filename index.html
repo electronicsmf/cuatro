@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Cuatro-Demo</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">Location</a></li>
+               </ul>
+            </nav>
+        </div>    
+    </header>
+    <div class="banner">
+        <img class="image-responsive" src="https://s31.postimg.org/79uy90j0r/banner.jpg" alt="">
+        <div class="container">
+            <h2>Welcome</h2>
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, reiciendis.</p>
+           <a href="/" class="btn btn-primary">More Info</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <h2>Welcome To my Page</h2>
+            <p id="demo">The Power Of JavaScript</p>
+            <button type="button" onclick="document.getElementById('demo').innerHTML='Hello From my Page'">Click Me!</button> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <h2>Lets Play With JavaScript</h2>
+            <p>JavaScript can Change Html</p>
+            <p>Lets change the src</p>
+            <button class="btn btn-primary" onclick="document.getElementById('photo').src='images/pic_bulboff.gif'">Click Me</button>
+                 <img id="photo" src="images/pic_bulboff.gif" style="width:15%">
+            <button class="btn btn-primary" onclick="document.getElementById('photo').src='images/pic_bulbon.gif'">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+           <h2>Let's Change the Text</h2>
+           <p id="demo1">Lets change the text style With JavaScript</p>
+           <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me </button>
+        </div>
+
+    </div>
+    <div class="container">
+       <div class="inner-container">
+          <h2>Hide the HTML</h2>
+          <p id="demo2">Lets Hide Text</p>
+          <button type="btn" onclick="document.getElementById('demo2').style.display='none'">Click Me</button>
+       </div>
+    </div>
+    <div class="container">
+       <div class="inner-container">
+           <h2>show the Text</h2>
+           <p id="demo3" style="display:none">Show the Html with Javascript</p>
+           <button onclick="document.getElementById('demo3').style.display='block'">Click Here</button>
+       </div>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <h2 id="demo5"></h2>
+             
+        <script>
+        document.getElementById('demo5').innerHTML = "Hello From This Page";
+        </script>
+        </div>
+    </div>
+     <script>
+     function myFunction(){
+        document.getElementById("demo6").innerHTML = "Paragraph Change";
+     }
+     </script>
+    <div class="container">
+        <div class="inner-container">
+            <h2>Javascript in head</h2>
+            <p id="demo6">A Paragraph</p>
+             
+            <button type="button" onclick="myFunction()">Click Here</button>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <h1>My First Web Page</h1>
+            <p>My First Demo</p>
+            <p id="demo7"></p>
+            <script>
+            document.getElementById("demo7").innerHTML = 5 + 6;
+            
+            </script>
+        </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                <h1>My First Web Page</h1>
+                <p>My First Demo</p>
+                <script>
+                document.write(5+6);
+                
+                </script>
+            </div>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <h1>My First Web Page</h1>
+            <p>My First Demo</p>
+            <button type="button" onclick="document.write(5+6)">Click Me</button>      
+        </div>
+    </div> 
+    <div class="container">
+            <div class="inner-container">
+                <h1>My First Web Page</h1>
+                <p>My First Demo</p>
+                 <script>
+                 //window.alert(5+6);
+                 </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                <h1>My First Web Page</h1>
+                <p>My First Demo</p>
+                 <script>
+                 console.log(5+6);
+                 </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Statements</h2>
+                    
+                    <p>Statements are separated by semicolons.</p>
+                    
+                    <p>In the script below, the first statement declares the variables x, y, and z.</p>
+                    
+                    <p>The second statement assigns the literal value 5 to x.</p>
+                    
+                    <p>The third statement assigns the literal value 6 to y.</p>
+                    
+                    <p>Then x an y are added and assigned to z.</p>
+                    
+                    <p>Finally the value of z is displayed in the paragraph below:</p>
+
+                <p id="newDemo"></p>
+
+                <script>
+                   var x = 5;
+                   var y = 6;
+                   var z = x + y;
+
+                   document.getElementById("newDemo").innerHTML = z;
+
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    
+                    <p>Number can be written with or without decimals.</p>
+                    
+                <p id="newDemo1"></p>
+
+                <script>
+                    document.getElementById("newDemo1").innerHTML = 10.50;
+
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    
+                    <p>Number can be written with or without decimals.</p>
+                    
+                <p id="newDemo2"></p>
+
+                <script>
+                    document.getElementById("newDemo2").innerHTML = "John Dee";
+
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    
+                    <p>Number can be written with or without decimals.</p>
+                    
+                <p id="newDemo3"></p>
+
+                <script>
+                    var x;
+                    x = 6;
+                    document.getElementById("newDemo3").innerHTML = x;
+
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2 id="first">JavaScript Numbers</h2>
+                    <p id="second">Number can be written with or without decimals.</p>
+                    <button type="button" onclick="myFunction()">Click Me</button>
+                <script>
+                function myFunction(){
+                    document.getElementById('first').innerHTML = "Welcome";
+                    document.getElementById('second').innerHTML = 'Hello';
+
+                }
+
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="dem"></p>
+                <script>
+                 var answer = "home";
+                 var person = "Thomas";
+                 var pi = 3.14;
+                 
+                 document.getElementById("dem").innerHTML = answer+ "<br>" + person + "<br>" + pi;
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="de"></p>
+                <script>
+                 var carName = "Volvo"
+                 document.getElementById("de").innerHTML = carName;
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="dime"></p>
+                <script>
+                 function functionNum(p1, p2){
+                     return p1* p2;
+                 }
+                 document.getElementById('dime').innerHTML= functionNum(3,4);
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="dime1"></p>
+                <script>
+                 function mulNum(p1, p2){
+                     return p1* p2;
+                 }
+                 document.getElementById('dime1').innerHTML= mulNum(3,4);
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="dime2"></p>
+                <script>
+                 function toCelcius(f){
+                     return (5/9) * (f-32);
+                 }
+                 document.getElementById('dime2').innerHTML= toCelcius(34);
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="dime3"></p>
+                <script>
+                 function toCelcius(f){
+                     return (5/9) * (f-32);
+                 }
+                 document.getElementById('dime3').innerHTML= toCelcius();
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="dime4"></p>
+                <script>
+                    var car ={type:"kia",model:"500",color:"white"};
+
+                    document.getElementById('dime4').innerHTML=car.type;
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="dime5"></p>
+                <script>
+                    var car ={
+                        type:"kia",
+                        model:"500",
+                        color:"white"};
+
+                    document.getElementById('dime5').innerHTML=
+                    car.type + " is " + car.model + " model " + car.color + ' color ';
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="dime6"></p>
+                <script>
+                    var car = "honda";
+                    carName();
+                    function carName(){
+
+                    document.getElementById('dime6').innerHTML=
+                      car;
+                    }
+                    </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="dime7"></p>
+                <script>
+                     document.getElementById('dime7').innerHTML=
+                    car;
+                   
+                    carName();
+                    function carName(){
+                        var car = "honda";
+                    }
+                    </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="time"></p>
+                    <button onclick="telltime()"class="btn btn-primary">Click Here for the Time</button>
+                <script>
+                 function telltime(){
+                    var date = new Date();
+                    var out="";
+                    out+="The Time is " + date;
+                    document.getElementById('time').innerHTML=out;
+                 }   
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="time1"></p>
+                    <button onclick="showTime()"class="btn btn-primary">Click Here for the Time</button>
+                <script>
+                 function showTime(){
+                    document.getElementById('time1').innerHTML=Date();
+                 }   
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo12"></p>
+                <script>
+                    var y ="it\"s ok to use Javascript";
+                    var x= 'let\'s play some games javascript';
+                    document.getElementById('demo12').innerHTML = x +'<br> ' + y; 
+                  
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo13"></p>
+                <script>
+                    document.getElementById('demo13').innerHTML = "Hello \ People"; 
+                  
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo14">hello Martin!</p>
+                    <button onclick="newFunction()">Click Me</button>
+                <script>
+                    function newFunction(){
+                       var str = document.getElementById('demo14').innerHTML;
+                       var txt = str.replace("hello","looking");
+                       document.getElementById('demo14').innerHTML= txt;
+                    }
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo15">hello Martin!</p>
+                    <button onclick="senFunction()">Click Me</button>
+                <script>
+                    function senFunction(){
+                       var str = document.getElementById('demo15').innerHTML;
+                       var txt = str.replace(/hello/g,"looking");
+                       document.getElementById('demo15').innerHTML= txt;
+                    }
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo16">hello Martin!</p>
+                    <button onclick="txtFunction()">Click Me</button>
+                <script>
+                    function txtFunction(){
+                       var text = document.getElementById("demo16").innerHTML;
+                       document.getElementById('demo16').innerHTML = text.toUpperCase();  
+                    }
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo17">hello Martin!</p>
+                    <button onclick="txtFunction()">Click Me</button>
+                <script>
+                    var text1 = "Hello";
+                    var text2 = "World";
+                    var text3 = text1.concat(" ",text2);
+
+                    function txtFunction(){
+                       var text = document.getElementById("demo17").innerHTML=text3;
+                    }
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo18">hello Martin!</p>
+                    <button onclick="txFunction()">Click Me</button>
+                <script>
+                    var text1 = "Hello";
+                    var text2 = "World";
+                    var text3 = text1.concat("",text2);
+
+                    function txFunction(){
+                       document.getElementById("demo18").innerHTML=text3.charAt(1);
+                    }
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo19">hello Martin!</p>
+                    <button onclick="xFunction()">Click Me</button>
+                <script>
+                    
+                    function xFunction(){
+                        var string = "car,toys,planes";
+                        var arr= string.split(" - ");
+                        document.getElementById("demo19").innerHTML=arr;
+                    }
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo20">hello Martin!</p>
+                    <button onclick="meFunction()">Click Me</button>
+                <script>
+                    
+                    function meFunction(){
+                        var str = "Hello";
+                        var arr = str.split("");
+                        var text ="";
+                        var i;
+                        for(var i=0 ;i < arr.length; i++){
+                            text += arr[i] + "<br>";
+                        }
+                        document.getElementById('demo20').innerHTML= text;
+                    }
+                </script> 
+            </div>
+    </div>
+    <div class="container">
+            <div class="inner-container">
+                    <h2>JavaScript Numbers</h2>
+                    <p>Number can be written with or without decimals.</p>
+                    <p id="demo21">hello Martin!</p>
+                    
+                <script>
+                    var myNumber = 2;
+                    var text ="";
+                    while(myNumber != Infinity){
+                       myNumber = myNumber * myNumber;
+                       text = text + myNumber + "<br>";
+                    }
+                    document.getElementById('demo21').innerHTML = text;
+                </script> 
+            </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
